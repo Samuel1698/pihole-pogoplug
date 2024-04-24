@@ -12,17 +12,29 @@ Follow the steps below in order to setup your Pogoplug with PiHole.
 
 **Pogoplug v4 (Mobile) **
 
-roughly $15 on [Ebay](https://www.ebay.com/itm/255982127104?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=PLV6qj2zTxa&sssrc=2047675&ssuid=Cjy1FHrMT0W&widget_ver=artemis&media=COPY)
+Roughly $15 on [Ebay](https://www.ebay.com/itm/255982127104?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=PLV6qj2zTxa&sssrc=2047675&ssuid=Cjy1FHrMT0W&widget_ver=artemis&media=COPY)
 
 **SD Card 2GB+**
 
 32GB for roughly $8 on [Amazon](https://a.co/d/bqeT9nw)
+
+**Soldering Iron**
+
+As little as 9$ on [Amazon] (https://a.co/d/6p36Kf7)
+
+**USB to TTL Converter**
+8$ on [Amazon] (https://a.co/d/73xEUBs)
 
 ### Downloads:
 
 Pogoplug Debian img
 
 https://github.com/pepaslabs/pogoplug-v4-bodhi-rootfs-debian
+
+### Serial connection
+The only way to connect to the pogoplug nowadays is to solder some cables directly into the serial connection in between the SD Card slot and the Power Input.
+https://youtu.be/oVc8QMos0AM?si=FOWqQUvnxVjbiOWY&t=35
+
 
 ### First follow this guide to allow SSH in your pogoplug:
 

@@ -37,30 +37,28 @@ The only way to connect to the pogoplug nowadays is to solder some cables direct
 https://youtu.be/oVc8QMos0AM?si=FOWqQUvnxVjbiOWY&t=35
 
 
-### First follow this guide to allow SSH in your pogoplug:
+### Follow this guide to allow SSH in your pogoplug:
 
 https://www.youtube.com/watch?v=SheuimfB6kQ and https://pastebin.com/mv1WdVdH
 Follow those steps until you can SSH into your pogoplug
 
-### Install u-booot
+### Install u-Boot
 https://github.com/pepaslabs/pogoplug_mobile_uboot_installer
 
 
 Once ready, power off your pogoplug and remove the sd card.
 
-Format your sd card (I used SD Formmatter) 
+Format your sd card
 
-https://www.sdcard.org/downloads/formatter_4/
+### Download Debian and write to SD Card
 
-### The section below I will not describe in detail how to use each software, please use google as there is already tons of guides.
+I used this guide https://github.com/pepaslabs/pogoplug-v4-bodhi-rootfs-debian?tab=readme-ov-file to get a correct version of Debian. 
+If on windows, I've included the file on this repository for download, so you can skip this step.
 
 use your favorite image tool to write the pogoplug debian image to it (I used win32diskimager) 
 
 http://sourceforge.net/projects/win32diskimager/files/latest/download
 
-use your favorite image tool to extend the the image to the full sd card (I used Gparted live)
-
-http://gparted.org/livecd.php
 
 plug your sd card into the pogoplug and boot. you will need to connect via SSH
 
@@ -100,12 +98,13 @@ Check to make sure it you are using the full sd card and have enough space. (aft
 
 `passwd`
 
-### Your now ready to install: 
+### You're now ready to install pi-hole: 
 
 `curl -sSL https://install.pi-hole.net | bash`
 
 
 ## Configure:
+
 You now can follow the guides on PI HOLE for configuration (https://github.com/pi-hole/pi-hole)
 
 

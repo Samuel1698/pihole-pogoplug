@@ -39,7 +39,7 @@ https://youtu.be/oVc8QMos0AM?si=FOWqQUvnxVjbiOWY&t=35
 
 **Follow this guide to allow SSH in your pogoplug**
 
-Click on the [pastebin file](/pastebin) for my simplified version of this guide:
+Click on the [pastebin file](/pastebin.md) for my simplified version of this guide:
 https://www.youtube.com/watch?v=SheuimfB6kQ 
 
 He includes a lot of useful information. If you're new to this I recommend watching the whole video at least once.

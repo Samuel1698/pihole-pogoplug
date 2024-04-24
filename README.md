@@ -45,8 +45,6 @@ He includes a lot of useful information. If you're new to this I recommend watch
 
 ## Installing the Operating System
 
-## Installing an Operating System 
-
 **Install u-Boot**
 Once you can SSH into the pogoplug and can run the command wget, install uboot
 https://github.com/pepaslabs/pogoplug_mobile_uboot_installer

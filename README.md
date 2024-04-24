@@ -45,21 +45,23 @@ He includes a lot of useful information. If you're new to this I recommend watch
 
 ## Installing the Operating System
 
-### Install u-Boot
-https://github.com/pepaslabs/pogoplug_mobile_uboot_installer
+## Installing an Operating System 
 
+**Install u-Boot**
+Once you can SSH into the pogoplug and can run the command wget, install uboot
+https://github.com/pepaslabs/pogoplug_mobile_uboot_installer
 
 Once ready, power off your pogoplug and remove the sd card.
 
 Format your sd card
 
-### Write Debian into an SD Card
+**Download Debian and write to SD Card**
 
 Use your favorite image tool to write the pogoplug debian image to it (I used win32diskimager) 
 
 http://sourceforge.net/projects/win32diskimager/files/latest/download
 
-Plug your sd card into the pogoplug and boot. you will need to connect via SSH or Serial
+plug your sd card into the pogoplug and boot. you will need to connect via SSH or Serial
 
 user: root
 
@@ -73,27 +75,28 @@ password: _BLANK JUST PRESS ENTER_
 
 `apt-get upgrade`
 
-**Install needed software:** This step will take the longest to install git
+Install needed software:
 
 `apt-get install curl`
 
 `apt-get install git-core`
 
-**Remove unneeded software:**
+Remove unneeded software:
 
 `apt-get remove apache*`
 
 `apt-get autoremove`
 
-**Adjust your timezone:**
+Adjust your timezone:
 
 `dpkg-reconfigure tzdata`
 
-**Set a root password:** (OPTIONAL, but recommended)
+Set a root password: (OPTIONAL, but recommended)
 
 `passwd`
 
-### You're now ready to install pi-hole: 
+
+## You're now ready to install pi-hole: 
 
 `curl -sSL https://install.pi-hole.net | bash`
 

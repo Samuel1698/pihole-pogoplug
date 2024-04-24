@@ -74,12 +74,6 @@ password: _BLANK JUST PRESS ENTER_
 
 `apt-get upgrade`
 
-**Install needed software:**
-
-`apt-get install curl`
-
-`apt-get install git-core`
-
 **Remove unneeded software:**
 
 `apt-get remove apache*`
@@ -97,7 +91,8 @@ password: _BLANK JUST PRESS ENTER_
 
 ### You're now ready to install pi-hole
 
-`curl -sSL https://install.pi-hole.net | bash`
+Since installing Curl and Git does not work anymore (old version of Debian with many pages giving 404), the only option is to manually download the installer
+https://docs.pi-hole.net/main/basic-install/
 
 You now can follow the guides on PI HOLE for configuration (https://github.com/pi-hole/pi-hole)
 

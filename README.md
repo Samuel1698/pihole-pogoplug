@@ -8,11 +8,11 @@ Why not just use a raspberry pi?
 
 Follow the steps below in order to setup your Pogoplug with PiHole.
 
-### Items:
+## Pre-Requisites 
 
-**Pogoplug v4 (Mobile) **
+**PogoPlug v4 (Mobile)**
 
-Roughly $15 on [Ebay](https://www.ebay.com/itm/255982127104?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=PLV6qj2zTxa&sssrc=2047675&ssuid=Cjy1FHrMT0W&widget_ver=artemis&media=COPY)
+Roughly $5 (Plus Shipping) on [Ebay](https://www.ebay.com/itm/255982127104?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=PLV6qj2zTxa&sssrc=2047675&ssuid=Cjy1FHrMT0W&widget_ver=artemis&media=COPY)
 
 **SD Card 2GB+**
 
@@ -26,21 +26,24 @@ As little as 9$ on [Amazon](https://a.co/d/6p36Kf7)
 
 8$ on [Amazon](https://a.co/d/73xEUBs)
 
-### Downloads:
+**Downloads**
 
-Pogoplug Debian img
+Pogoplug Debian Image. [Taken from this repo](https://github.com/pepaslabs/pogoplug-v4-bodhi-rootfs-debian)
 
-https://github.com/pepaslabs/pogoplug-v4-bodhi-rootfs-debian
+## Preparing the device
 
-### Serial connection
+**Serial connection**
+
 The only way to connect to the pogoplug nowadays is to solder some cables directly into the serial connection in between the SD Card slot and the Power Input.
 https://youtu.be/oVc8QMos0AM?si=FOWqQUvnxVjbiOWY&t=35
 
+**Follow this guide to allow SSH in your pogoplug**
 
-### Follow this guide to allow SSH in your pogoplug:
+Click on the pastebin file for my simplified version of this guide:
+https://www.youtube.com/watch?v=SheuimfB6kQ 
+He includes a lot of useful information. If you're new to this I recommend watching the whole video at least once.
 
-https://www.youtube.com/watch?v=SheuimfB6kQ and https://pastebin.com/mv1WdVdH
-Follow those steps until you can SSH into your pogoplug
+## Installing the Operating System
 
 ### Install u-Boot
 https://github.com/pepaslabs/pogoplug_mobile_uboot_installer
@@ -50,27 +53,19 @@ Once ready, power off your pogoplug and remove the sd card.
 
 Format your sd card
 
-### Download Debian and write to SD Card
+### Write Debian into an SD Card
 
-I used this guide https://github.com/pepaslabs/pogoplug-v4-bodhi-rootfs-debian?tab=readme-ov-file to get a correct version of Debian. 
-If on windows, I've included the file on this repository for download, so you can skip this step.
-
-use your favorite image tool to write the pogoplug debian image to it (I used win32diskimager) 
+Use your favorite image tool to write the pogoplug debian image to it (I used win32diskimager) 
 
 http://sourceforge.net/projects/win32diskimager/files/latest/download
 
-
-plug your sd card into the pogoplug and boot. you will need to connect via SSH
+Plug your sd card into the pogoplug and boot. you will need to connect via SSH or Serial
 
 user: root
 
 password: _BLANK JUST PRESS ENTER_
 
-Check to make sure it you are using the full sd card and have enough space. (after install roughly 1GB will be used)
-
-`df -h`
-
-### Update and install all needed all dependencies:
+## Configure Debian and Install Pihole:
 
 **Update:**
 
@@ -101,9 +96,6 @@ Check to make sure it you are using the full sd card and have enough space. (aft
 ### You're now ready to install pi-hole: 
 
 `curl -sSL https://install.pi-hole.net | bash`
-
-
-## Configure:
 
 You now can follow the guides on PI HOLE for configuration (https://github.com/pi-hole/pi-hole)
 

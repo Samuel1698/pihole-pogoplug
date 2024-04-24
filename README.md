@@ -69,13 +69,13 @@ password: _BLANK JUST PRESS ENTER_
 
 ## Configure Debian and Install Pihole:
 
-**Update:**
+Update:
 
 `apt-get update`
 
 `apt-get upgrade`
 
-Install needed software:
+**Install needed software:
 
 `apt-get install curl`
 
@@ -96,7 +96,7 @@ Set a root password: (OPTIONAL, but recommended)
 `passwd`
 
 
-## You're now ready to install pi-hole: 
+### You're now ready to install pi-hole
 
 `curl -sSL https://install.pi-hole.net | bash`
 

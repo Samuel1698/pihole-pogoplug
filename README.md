@@ -39,8 +39,9 @@ https://youtu.be/oVc8QMos0AM?si=FOWqQUvnxVjbiOWY&t=35
 
 **Follow this guide to allow SSH in your pogoplug**
 
-Click on the pastebin file for my simplified version of this guide:
+Click on the [pastebin file](/pastebin) for my simplified version of this guide:
 https://www.youtube.com/watch?v=SheuimfB6kQ 
+
 He includes a lot of useful information. If you're new to this I recommend watching the whole video at least once.
 
 ## Installing the Operating System
@@ -67,29 +68,29 @@ password: _BLANK JUST PRESS ENTER_
 
 ## Configure Debian and Install Pihole:
 
-Update:
+**Update:**
 
 `apt-get update`
 
 `apt-get upgrade`
 
-**Install needed software:
+**Install needed software:**
 
 `apt-get install curl`
 
 `apt-get install git-core`
 
-Remove unneeded software:
+**Remove unneeded software:**
 
 `apt-get remove apache*`
 
 `apt-get autoremove`
 
-Adjust your timezone:
+**Adjust your timezone:**
 
 `dpkg-reconfigure tzdata`
 
-Set a root password: (OPTIONAL, but recommended)
+**Set a root password: (OPTIONAL, but recommended)**
 
 `passwd`
 

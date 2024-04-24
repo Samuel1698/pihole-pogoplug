@@ -20,10 +20,11 @@ Roughly $15 on [Ebay](https://www.ebay.com/itm/255982127104?mkcid=16&mkevt=1&mkr
 
 **Soldering Iron**
 
-As little as 9$ on [Amazon] (https://a.co/d/6p36Kf7)
+As little as 9$ on [Amazon](https://a.co/d/6p36Kf7)
 
 **USB to TTL Converter**
-8$ on [Amazon] (https://a.co/d/73xEUBs)
+
+8$ on [Amazon](https://a.co/d/73xEUBs)
 
 ### Downloads:
 

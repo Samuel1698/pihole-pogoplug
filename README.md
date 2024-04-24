@@ -12,11 +12,11 @@ Follow the steps below in order to setup your Pogoplug with PiHole.
 
 **Pogoplug v4 (Mobile) **
 
-roughly $15 on amazon: https://www.amazon.com/dp/B01HNFMGLU/ref=cm_sw_r_cp_dp_T2_Ch.Bzb6M17HAE
+roughly $15 on [Ebay](https://www.ebay.com/itm/255982127104?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=PLV6qj2zTxa&sssrc=2047675&ssuid=Cjy1FHrMT0W&widget_ver=artemis&media=COPY)
 
 **SD Card 2GB+**
 
-32GB for roughly $10 on amazon: https://www.amazon.com/dp/B06XWN9Q99/ref=cm_sw_r_cp_dp_T2_aj.BzbNJDZQ9M
+32GB for roughly $8 on [Amazon](https://a.co/d/bqeT9nw)
 
 ### Downloads:
 
@@ -24,9 +24,14 @@ Pogoplug Debian img
 
 https://github.com/pepaslabs/pogoplug-v4-bodhi-rootfs-debian
 
-### First follow this guide to setup your pogoplug for debian:
+### First follow this guide to allow SSH in your pogoplug:
 
-http://blog.qnology.com/2014/07/hacking-pogoplug-v4-series-4-and-mobile.html
+https://www.youtube.com/watch?v=SheuimfB6kQ and https://pastebin.com/mv1WdVdH
+Follow those steps until you can SSH into your pogoplug
+
+### Install u-booot
+https://github.com/pepaslabs/pogoplug_mobile_uboot_installer
+
 
 Once ready, power off your pogoplug and remove the sd card.
 

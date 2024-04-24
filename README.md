@@ -28,6 +28,7 @@ As little as 9$ on [Amazon](https://a.co/d/6p36Kf7)
 
 **Downloads**
 
+I've included the image files for both [Windows](https://github.com/Samuel1698/pihole-pogoplug/releases/download/Latest/Debian-jessie-3.18.5-pogoplug-v4-20151110-disk-image.4GB.img.zip) and [Linux](https://github.com/Samuel1698/pihole-pogoplug/releases/download/Latest/Debian-jessie-3.18.5-pogoplug-v4-20151110-disk-image.dd.gz) from the repo below, in case it goes down.
 Pogoplug Debian Image. [Taken from this repo](https://github.com/pepaslabs/pogoplug-v4-bodhi-rootfs-debian)
 
 ## Preparing the device

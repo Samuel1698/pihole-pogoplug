@@ -126,5 +126,8 @@ You now can follow the guides on PI HOLE for configuration (https://github.com/p
 - [x] SSH Into Pogoplug
 - [x] Install UBoot
 - [x] Install Debian
+      - [x] Debian 8
+      - [ ] Upgrade to Debian 10
 - [ ] Install Pihole
-    - [ ] Bypass Pihole OS requirements 
+    - [X] Bypass Pihole OS requirements
+    - [ ] Get pass the PHP apt-get 

@@ -69,11 +69,34 @@ password: _BLANK JUST PRESS ENTER_
 
 ## Configure Debian and Install Pihole:
 
+**Changing the source files for apt:**
+
+Since Debian 8 is no longer supported, we need to change the source file for apt-get
+
+> deb [trusted=yes] http://archive.debian.org/debian/ jessie main
+
+> deb-src [trusted=yes] http://archive.debian.org/debian/ jessie main
+
+>
+
+>deb [trusted=yes] http://archive.debian.org/debian-security/ jessie/updates main contrib non-free
+
+>deb-src [trusted=yes] http://archive.debian.org/debian-security/ jessie/updates main contrib non-free
+
+
 **Update:**
 
 `apt-get update`
 
 `apt-get upgrade`
+
+**Install needed software:**
+
+This step will take the longest to install git
+
+`apt-get install curl`
+
+`apt-get install git-core`
 
 **Remove unneeded software:**
 
@@ -92,7 +115,6 @@ password: _BLANK JUST PRESS ENTER_
 
 ### You're now ready to install pi-hole
 
-Since installing Curl and Git does not work anymore (old version of Debian with many pages giving 404), the only option is to manually download the installer
 https://docs.pi-hole.net/main/basic-install/
 
 You now can follow the guides on PI HOLE for configuration (https://github.com/pi-hole/pi-hole)

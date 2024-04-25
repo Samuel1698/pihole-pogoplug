@@ -74,16 +74,14 @@ Recommended to restart the device
 **Changing the source files for apt:**
 
 Since Debian 8 is no longer supported, we need to change the source file for apt-get
+Open it by typing `nano /etc/apt/sources.list`
+```
+deb [trusted=yes] http://archive.debian.org/debian/ jessie main
+deb-src [trusted=yes] http://archive.debian.org/debian/ jessie main
 
-> deb [trusted=yes] http://archive.debian.org/debian/ jessie main
-
-> deb-src [trusted=yes] http://archive.debian.org/debian/ jessie main
-
->
-
->deb [trusted=yes] http://archive.debian.org/debian-security/ jessie/updates main contrib non-free
-
->deb-src [trusted=yes] http://archive.debian.org/debian-security/ jessie/updates main contrib non-free
+deb [trusted=yes] http://archive.debian.org/debian-security/ jessie/updates main contrib non-free
+deb-src [trusted=yes] http://archive.debian.org/debian-security/ jessie/updates main contrib non-free
+```
 
 
 **Update:**

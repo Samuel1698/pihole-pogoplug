@@ -67,6 +67,8 @@ user: root
 
 password: _BLANK JUST PRESS ENTER_
 
+Recommended to restart the device
+
 ## Configure Debian and Install Pihole:
 
 **Update:**
@@ -98,3 +100,11 @@ https://docs.pi-hole.net/main/basic-install/
 You now can follow the guides on PI HOLE for configuration (https://github.com/pi-hole/pi-hole)
 
 
+## TODO
+### List of tasks to verify that this guide works
+- [x] SSH Into Pogoplug
+- [x] Install UBoot
+- [ ] Install Debian
+  - [x] Use the provided repo
+  - [ ] Use debian 10 to prevent issues with outdated unsupported OS
+- [ ] Install Pihole 

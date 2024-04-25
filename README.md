@@ -126,7 +126,5 @@ You now can follow the guides on PI HOLE for configuration (https://github.com/p
 ### List of tasks to verify that this guide works
 - [x] SSH Into Pogoplug
 - [x] Install UBoot
-- [ ] Install Debian
-  - [x] Use the provided repo
-  - [ ] Use debian 10 to prevent issues with outdated unsupported OS
+- [x] Install Debian
 - [ ] Install Pihole 

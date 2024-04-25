@@ -29,7 +29,8 @@ As little as 9$ on [Amazon](https://a.co/d/6p36Kf7)
 **Downloads**
 
 I've included the image files for both [Windows](https://github.com/Samuel1698/pihole-pogoplug/releases/download/Latest/Debian-jessie-3.18.5-pogoplug-v4-20151110-disk-image.4GB.img.zip) and [Linux](https://github.com/Samuel1698/pihole-pogoplug/releases/download/Latest/Debian-jessie-3.18.5-pogoplug-v4-20151110-disk-image.dd.gz) from the repo below, in case it goes down.
-Pogoplug Debian Image. [Taken from this repo](https://github.com/pepaslabs/pogoplug-v4-bodhi-rootfs-debian)
+
+[PogoPlug v4 bodhi rootfs debian](https://github.com/pepaslabs/pogoplug-v4-bodhi-rootfs-debian)
 
 ## Preparing the device
 
@@ -125,4 +126,5 @@ You now can follow the guides on PI HOLE for configuration (https://github.com/p
 - [x] SSH Into Pogoplug
 - [x] Install UBoot
 - [x] Install Debian
-- [ ] Install Pihole 
+- [ ] Install Pihole
+    - [ ] Bypass Pihole OS requirements 

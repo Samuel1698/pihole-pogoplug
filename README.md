@@ -91,28 +91,64 @@ deb-src [trusted=yes] http://archive.debian.org/debian-security/ jessie/updates 
 
 `apt-get upgrade`
 
-**Install needed software:**
-
-This step will take the longest to install git
-
-`apt-get install curl`
-
-`apt-get install git-core`
-
-**Remove unneeded software:**
-
-`apt-get remove apache*`
-
-`apt-get autoremove`
-
-**Adjust your timezone:**
-
-`dpkg-reconfigure tzdata`
-
 **Set a root password: (OPTIONAL, but recommended)**
 
 `passwd`
 
+**Upgrade from Debian 8 to Debian 9**
+
+As root user, edit /etc/apt/sources.list - change all occurrences of jessie to stretch
+
+then run these commands
+```
+apt-get update
+apt-get upgrade
+apt-get dist-upgrade
+reboot
+```
+
+**Upgrade to Debian 10**
+
+If you apt-get dist-upgrade from jessie to stretch and it "bricks" your 'plug, it is probably due to fsck not being able to find /dev/root:
+
+```
+[....] Checking file systems...fsck from util-linux 2.29.2
+fsck.ext3: No such file or directory while trying to open /dev/root
+Possibly non-existent device?
+fsck exited with status code 8
+failed (code 8).
+[FAIL] File system check failed. A log is being saved in /var/log/fsck/checkfs if that location is writable. Please repair the file system manually. ... failed!
+[warn] A maintenance shell will now be started. CONTROL-D will terminate this shell and resume system boot. ... (warning).
+Give root password for maintenance
+(or press Control-D to continue):
+```
+You can fix this by placing your SD card into a laptop and editing /etc/fstab. Replace /dev/root with /dev/mmcblk0p1 (if you boot from SD card).
+
+Boot the plug and you should be able to log in with 'root' and your selected password.
+
+Modify once again the 'etc/apt/sources.list`. This time, we're changing 'stretch' to 'buster' and adding a few sources
+
+```
+deb http://archive.debian.org/debian buster main contrib non-free
+deb-src http://archive.debian.org/debian buster main contrib non-free
+
+deb http://archive.debian.org/debian buster-updates main contrib non-free
+deb-src http://archive.debian.org/debian buster-updates main contrib non-free
+
+deb http://archive.debian.org/debian buster-backports main contrib non-free
+deb-src http://archive.debian.org/debian buster-backports main contrib non-free
+
+deb http://security.debian.org/debian-security/ buster/updates main contrib non-free
+deb-src http://security.debian.org/debian-security/ buster/updates main contrib non-free
+```
+
+Then run these commands again
+```
+apt-get update
+apt-get upgrade
+apt-get dist-upgrade
+reboot
+```
 
 ### You're now ready to install pi-hole
 
@@ -121,13 +157,3 @@ https://docs.pi-hole.net/main/basic-install/
 You now can follow the guides on PI HOLE for configuration (https://github.com/pi-hole/pi-hole)
 
 
-## TODO
-### List of tasks to verify that this guide works
-- [x] SSH Into Pogoplug
-- [x] Install UBoot
-- [x] Install Debian
-      - [x] Debian 8
-      - [ ] Upgrade to Debian 10
-- [ ] Install Pihole
-    - [X] Bypass Pihole OS requirements
-    - [ ] Get pass the PHP apt-get 
